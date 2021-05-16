@@ -14,5 +14,5 @@ Entradas:
 
 Resultados:
 
-El sistema  creará un nuevo producto con el id, nombre, descripción, precio y cantidad disponible
+El sistema  creará un nuevo producto con el id, nombre, descripción, precio y cantidad disponible.
 
