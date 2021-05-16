@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shopping-cart" />
+        <module name="shipping" />
+        <module name="review" />
+        <module name="recommendation" />
+        <module name="inventory" />
+        <module name="order-history" />
+        <module name="product-info" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="inventory" target="16" />
+      <module name="order-history" target="16" />
+      <module name="product-info" target="16" />
+      <module name="recommendation" target="16" />
+      <module name="review" target="16" />
+      <module name="shipping" target="16" />
+      <module name="shopping-cart" target="16" />
+      <module name="umbappdisdis202" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="inventory" options="-parameters" />
+      <module name="order-history" options="-parameters" />
+      <module name="product-info" options="-parameters" />
+      <module name="recommendation" options="-parameters" />
+      <module name="review" options="-parameters" />
+      <module name="shipping" options="-parameters" />
+      <module name="shopping-cart" options="-parameters" />
+    </option>
+  </component>
+</project>
