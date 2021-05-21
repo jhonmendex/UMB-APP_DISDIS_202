@@ -5,18 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f578c6e-e2a4-423e-bc47-5e097d51d29b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-history/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-history/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/product-info.iml" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/product-info.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommendation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/review/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipping/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shipping/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sYKGwNgJCZZbni4KWE6filronF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,8 +49,28 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="F:\Programs\IntelliJ IDEA 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="co.edu.umb.ds.productinfo.business.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\University\semester seventh\Distributed systems\3 term\basicProduct\UMB-APP_DISDIS_202\docker" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ReviewApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InventoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="inventory" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.inventory.InventoryApplication" />
@@ -90,6 +132,13 @@
       <workItem from="1621043999084" duration="537000" />
       <workItem from="1621199019141" duration="3362000" />
       <workItem from="1621288498821" duration="3013000" />
+      <workItem from="1621375021221" duration="2784000" />
+      <workItem from="1621378011542" duration="524000" />
+      <workItem from="1621547841923" duration="3999000" />
+      <workItem from="1621559123679" duration="32000" />
+      <workItem from="1621620794370" duration="6806000" />
+      <workItem from="1621632320186" duration="39000" />
+      <workItem from="1621638953875" duration="1122000" />
     </task>
     <servers />
   </component>
