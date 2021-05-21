@@ -31,7 +31,7 @@ public class NewProductDto {
         try {
             this.productInformation = new ObjectMapper().readValue(productInformation, ProductInformation.class);
         } catch (JsonProcessingException e) {
-
+            throw new AppException(EMessage.ERROR_PARSE_RECIPE_PART);
 
         }
     }
