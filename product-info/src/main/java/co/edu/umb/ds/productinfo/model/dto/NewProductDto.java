@@ -1,5 +1,6 @@
 package co.edu.umb.ds.productinfo.model.dto;
 
+import co.edu.umb.ds.productinfo.business.exception.ApiRequestException;
 import co.edu.umb.ds.productinfo.model.entities.ProductInformation;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,6 +14,9 @@ public class NewProductDto {
     public NewProductDto(MultipartFile imageFile, ProductInformation productInformation) {
         this.imageFile = imageFile;
         this.productInformation = productInformation;
+    }
+
+    public NewProductDto() {
     }
 
     public MultipartFile getImageFile() {
@@ -31,7 +35,9 @@ public class NewProductDto {
         try {
             this.productInformation = new ObjectMapper().readValue(productInformation, ProductInformation.class);
         } catch (JsonProcessingException e) {
-            throw new AppException(EMessage.ERROR_PARSE_RECIPE_PART);
+
+            // No se envia de forma correcta los datos del ProductInformation
+            throw new ApiRequestException("Verificar mapeo de ProductInformation");
 
         }
     }

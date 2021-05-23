@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f578c6e-e2a4-423e-bc47-5e097d51d29b" name="Default Changelist" comment="" />
+    <list default="true" id="1f578c6e-e2a4-423e-bc47-5e097d51d29b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/product-info.iml" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/product-info.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/controller/ProductInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/controller/ProductInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/dto/NewProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/dto/NewProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/enums/CategoryName.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/enums/CategoryName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="TypeScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,33 +43,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="F:\Programs\IntelliJ IDEA 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="co.edu.umb.ds.productinfo.business.service" />
+      <recent name="co.edu.umb.ds.productinfo.model.dto" />
+      <recent name="co.edu.umb.ds.productinfo.model.util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\University\semester seventh\Distributed systems\3 term\basicProduct\UMB-APP_DISDIS_202\docker" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReviewApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ProductInfoApplication">
     <configuration name="InventoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="inventory" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.inventory.InventoryApplication" />
@@ -126,6 +138,9 @@
       <workItem from="1621620794370" duration="6806000" />
       <workItem from="1621632320186" duration="39000" />
       <workItem from="1621638953875" duration="1122000" />
+      <workItem from="1621715906755" duration="12378000" />
+      <workItem from="1621729545878" duration="9234000" />
+      <workItem from="1621799496672" duration="914000" />
     </task>
     <servers />
   </component>

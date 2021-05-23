@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Entity(name = "category")//nombre de la base de datos
 @Table(name = "category")
 public class Category {
+
     @Id
     @GeneratedValue(strategy = IDENTITY)
     @Column(name = "id", updatable = false)
@@ -19,6 +20,25 @@ public class Category {
     private CategoryName categoryName;
 
     public Category(CategoryName categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public Category() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public CategoryName getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(CategoryName categoryName) {
         this.categoryName = categoryName;
     }
 }
