@@ -10,8 +10,8 @@
         <module name="shipping" />
         <module name="review" />
         <module name="recommendation" />
-        <module name="inventory" />
         <module name="order-history" />
+        <module name="inventory" />
         <module name="product-info" />
       </profile>
     </annotationProcessing>
