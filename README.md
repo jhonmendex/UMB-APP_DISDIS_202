@@ -2,7 +2,7 @@
 
 Proyecto de microservicios sistemas distribuidos
 
-## Recomendation
+## Recommendation
 
 **F001 El sistema debe generar recomendciones por tipo de categoria**
 
