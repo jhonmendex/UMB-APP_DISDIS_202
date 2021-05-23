@@ -1,7 +1,7 @@
 package co.edu.umb.ds.recomendation.business.kafka.config;
 
 import co.edu.umb.ds.recomendation.model.dto.KafkaProducInfoDto;
-import co.edu.umb.ds.recomendation.model.dto.ReviewDto;
+import co.edu.umb.ds.recomendation.model.dto.KafkaReviewDto;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
@@ -41,7 +41,7 @@ public class KafkaConfig {
     }
 
     @Bean
-    public ConsumerFactory<String, ReviewDto> reviewConsumerFactory() {
+    public ConsumerFactory<String, KafkaReviewDto> reviewConsumerFactory() {
         Map<String, Object> config = new HashMap<>();
 
         config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
@@ -50,12 +50,12 @@ public class KafkaConfig {
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
         config.put(JsonDeserializer.TRUSTED_PACKAGES, "*");
         return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(),
-                new JsonDeserializer<>(ReviewDto.class, false));
+                new JsonDeserializer<>(KafkaReviewDto.class, false));
     }
 
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, ReviewDto> reviewKafkaListenerFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, ReviewDto> factory = new
+    public ConcurrentKafkaListenerContainerFactory<String, KafkaReviewDto> reviewKafkaListenerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, KafkaReviewDto> factory = new
                 ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(reviewConsumerFactory());
         return factory;
