@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1f578c6e-e2a4-423e-bc47-5e097d51d29b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-info/product-info.iml" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/product-info.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/controller/ProductInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/controller/ProductInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/ProductInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/dto/NewProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/dto/NewProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/enums/CategoryName.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/enums/CategoryName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-info/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/loader/CategoryLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/loader/CategoryLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/model/util/FileUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sYKGwNgJCZZbni4KWE6filronF" />
@@ -69,7 +68,24 @@
       <recent name="F:\University\semester seventh\Distributed systems\3 term\basicProduct\UMB-APP_DISDIS_202\docker" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.ProductInfoApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InventoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="inventory" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.inventory.InventoryApplication" />
