@@ -9,6 +9,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+import co.edu.umb.ds.recomendation.model.dto.KafkaProducInfoDto;
+import co.edu.umb.ds.recomendation.model.dto.KafkaReviewDto;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -39,7 +42,21 @@ public class Product {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "category_routine", joinColumns = @JoinColumn(name = "id_routine"),
-            inverseJoinColumns = @JoinColumn(name = "id_cateory"))
+        inverseJoinColumns = @JoinColumn(name = "id_cateory"))
     private Set<Category> categories = new HashSet<>();
+
+    public Product(KafkaProducInfoDto producInfoDto) {
+        this.id = producInfoDto.getId();
+        this.name = producInfoDto.getName();
+        this.pathImage = producInfoDto.getPathImage();
+        this.price = producInfoDto.getPrice();
+        this.state = producInfoDto.isState();
+        this.categories = producInfoDto.getCategories();
+    }
+
+    public Product(KafkaReviewDto reviewDto) {
+        this.id = reviewDto.getProductId();
+        this.average = reviewDto.getAverage();
+    }
 
 }
