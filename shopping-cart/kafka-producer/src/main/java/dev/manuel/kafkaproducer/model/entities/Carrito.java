@@ -1,83 +1,53 @@
 package co.edu.umb.ds.shoppingcart;
 
 public class Carrito {
-    int item;
-    int idProducto;
-    String nombres;
-    String descripcion;
-    double precioCompra;
-    int cantidad;
-    double subTotal;
+    int id;
+    int quantity;
+    double total_price;
+    int id_product;
     
-    public Carrito(){
+    public Carrito() {
     }
 
-    public Carrito(int item, int idProducto, String nombres, String descripcion, double precioCompra, int cantidad, double subTotal) {
-        this.item = item;
-        this.idProducto = idProducto;
-        this.nombres = nombres;
-        this.descripcion = descripcion;
-        this.precioCompra = precioCompra;
-        this.cantidad = cantidad;
-        this.subTotal = subTotal;
+    public Carrito(int id, int quantity, double total_price, int id_product) {
+        this.id = id;
+        this.quantity = quantity;
+        this.total_price = total_price;
+        this.id_product = id_product;
     }
 
-    public int getItem() {
-        return item;
+    public int getId() {
+        return id;
     }
 
-    public void setItem(int item) {
-        this.item = item;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getIdProducto() {
-        return idProducto;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setIdProducto(int idProducto) {
-        this.idProducto = idProducto;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public String getNombres() {
-        return nombres;
+    public double getTotal_price() {
+        return total_price;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setTotal_price(double total_price) {
+        this.total_price = total_price;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public int getId_product() {
+        return id_product;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setId_product(int id_product) {
+        this.id_product = id_product;
     }
-
-    public double getPrecioCompra() {
-        return precioCompra;
-    }
-
-    public void setPrecioCompra(double precioCompra) {
-        this.precioCompra = precioCompra;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public double getSubTotal() {
-        return subTotal;
-    }
-
-    public void setSubTotal(double subTotal) {
-        this.subTotal = subTotal;
-    }
-    
-    
     
 }
+
+   

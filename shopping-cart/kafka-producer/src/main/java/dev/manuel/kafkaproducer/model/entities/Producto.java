@@ -1,26 +1,20 @@
 package co.edu.umb.ds.shoppingcart;
 
-import java.io.InputStream;
-
 public class Producto {
+    
     int id;
-    String nombres;    
-    InputStream foto;
-    String descripcion;
-    double precio;
-    int stock;
-  
-
-    public Producto() {
+    String name;
+    double price;
+    int id_product_type;     
+    
+    public Producto(){
     }
 
-    public Producto(int id, String nombres, InputStream foto, String descripcion, double precio, int stock) {
+    public Producto(int id, String name, double price, int id_product_type) {
         this.id = id;
-        this.nombres = nombres;
-        this.foto = foto;
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.stock = stock;
+        this.name = name;
+        this.price = price;
+        this.id_product_type = id_product_type;
     }
 
     public int getId() {
@@ -31,45 +25,28 @@ public class Producto {
         this.id = id;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getName() {
+        return name;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public InputStream getFoto() {
-        return foto;
+    public double getPrice() {
+        return price;
     }
 
-    public void setFoto(InputStream foto) {
-        this.foto = foto;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public int getId_product_type() {
+        return id_product_type;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setId_product_type(int id_product_type) {
+        this.id_product_type = id_product_type;
     }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
-    
+  
 }
