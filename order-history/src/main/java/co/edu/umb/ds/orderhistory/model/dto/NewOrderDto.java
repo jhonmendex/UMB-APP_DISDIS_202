@@ -24,7 +24,7 @@ public class NewOrderDto {
             this.orderHistory = new ObjectMapper().readValue(orderHistory, OrderHistory.class);
         } catch (JsonProcessingException e) {
 
-            throw new ApiRequestException("Verificar mapeo de ProductInformation");
+            throw new ApiRequestException("Verificar mapeo de Order_History");
 
         }
     }

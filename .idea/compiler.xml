@@ -10,13 +10,12 @@
         <module name="shipping" />
         <module name="review" />
         <module name="recommendation" />
-        <module name="order-history" />
         <module name="inventory" />
+        <module name="order-history" />
         <module name="product-info" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-<<<<<<< HEAD
       <module name="inventory" target="15" />
       <module name="order-history" target="15" />
       <module name="product-info" target="15" />
@@ -25,16 +24,6 @@
       <module name="shipping" target="15" />
       <module name="shopping-cart" target="15" />
       <module name="umbappdisdis202" target="15" />
-=======
-      <module name="inventory" target="16" />
-      <module name="order-history" target="16" />
-      <module name="product-info" target="16" />
-      <module name="recommendation" target="16" />
-      <module name="review" target="16" />
-      <module name="shipping" target="16" />
-      <module name="shopping-cart" target="16" />
-      <module name="umbappdisdis202" target="16" />
->>>>>>> 4f39bc162e5fa14b056abfb76c22b988c8a41974
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
