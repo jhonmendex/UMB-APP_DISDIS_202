@@ -1,26 +1,11 @@
 package co.edu.umb.ds.recomendation.business.service;
 
-import co.edu.umb.ds.recomendation.model.dto.KafkaProducInfoDto;
-import co.edu.umb.ds.recomendation.model.dto.KafkaReviewDto;
-import co.edu.umb.ds.recomendation.model.entities.Product;
-import co.edu.umb.ds.recomendation.model.repositories.ProductRepository;
-import org.springframework.stereotype.Service;
+import co.edu.umb.ds.recomendation.model.dto.ShowRecommendationDto;
+import org.springframework.http.ResponseEntity;
 
-import javax.transaction.Transactional;
+import java.util.List;
 
-@Service
-@Transactional
-public class ProductService {
+public interface ProductService {
 
-    private ProductRepository productRepository;
-
-    public void updateProductInfo(KafkaProducInfoDto producInfoDto) {
-        Product product = new Product(producInfoDto);
-        productRepository.save(product);
-    }
-
-    public void updateProductReview(KafkaReviewDto reviewDto) {
-        Product product = new Product(reviewDto);
-        productRepository.save(product);
-    }
+    ResponseEntity<List<ShowRecommendationDto>> findRecommendation(Long idCategory);
 }

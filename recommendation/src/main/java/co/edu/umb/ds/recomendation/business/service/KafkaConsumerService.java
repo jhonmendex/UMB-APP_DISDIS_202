@@ -10,14 +10,15 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class KafkaConsumerService {
 
-    private ProductService productService;
+    private ProductServiceImpl productServiceImpl;
 
     @KafkaListener(
         topics = "product-info-event",
         groupId = "group_product_info_json",
         containerFactory = "producInfoKafkaListenerFactory")
     public void consumeProductInfo(KafkaProducInfoDto producInfoDto){
-        productService.updateProductInfo(producInfoDto);
+
+        productServiceImpl.updateProductInfo(producInfoDto);
     }
 
     @KafkaListener(
@@ -25,6 +26,7 @@ public class KafkaConsumerService {
         groupId = "group_review_json",
         containerFactory = "reviewKafkaListenerFactory")
     public void consumeReview(KafkaReviewDto reviewDto){
-        productService.updateProductReview(reviewDto);
+
+        productServiceImpl.updateProductReview(reviewDto);
     }
 }

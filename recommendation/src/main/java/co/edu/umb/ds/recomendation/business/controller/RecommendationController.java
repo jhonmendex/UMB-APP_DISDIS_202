@@ -1,6 +1,6 @@
 package co.edu.umb.ds.recomendation.business.controller;
 
-import co.edu.umb.ds.recomendation.business.service.RecommendationServiceImpl;
+import co.edu.umb.ds.recomendation.business.service.ProductServiceImpl;
 import co.edu.umb.ds.recomendation.model.dto.ShowRecommendationDto;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -14,11 +14,11 @@ import java.util.List;
 @AllArgsConstructor
 public class RecommendationController {
 
-    private final RecommendationServiceImpl recommendationService;
+    private final ProductServiceImpl productService;
 
     @GetMapping
     public ResponseEntity<List<ShowRecommendationDto>> findRecommendation(@RequestParam Long idCategory){
-        return recommendationService.findRecommendation(idCategory);
+        return productService.findRecommendation(idCategory);
     }
 
 }
