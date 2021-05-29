@@ -72,7 +72,7 @@ Emitir un evento (review-by-product-event) con la información actualizada de la
 
 ### Productor
 
-#### review-by-product-event (nombre del evento)
+#### review-by-product-event (nombre del topic)
 
 #### Ejemplo de una lista de reviews por producto
 
