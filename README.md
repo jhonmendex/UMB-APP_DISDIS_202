@@ -23,3 +23,32 @@ El sistema consultará los productos por tipo de categoría y devolverá las pub
 **Resultados:**
 
 El sistema detectará si hay actualizaciones en los productos recomendados y actualizará sus datos.
+
+
+
+## Uso
+
+API de recomendaciones
+
+```
+get:
+localhost:8080/api/v1/recommendation?idCategory=5
+
+Response:
+[
+  {
+    "idProduct":1,
+    "average":7.5,
+    "name":"testName",
+    "pathImage":"pathImageTest",
+    "price":3000
+  },
+  {
+    "idProduct":2,
+    "average":3.5,
+    "name":"testName2",
+    "pathImage":"pathImageTest2",
+    "price":6000
+  }
+]
+```
