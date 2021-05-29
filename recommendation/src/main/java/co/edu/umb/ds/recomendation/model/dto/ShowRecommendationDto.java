@@ -23,6 +23,14 @@ public class ShowRecommendationDto {
     private String pathImage;
     private int price;
 
+    public List<ShowRecommendationDto> listProductToListDto(List<Product> products) {
+        List<ShowRecommendationDto> recommendationDtos = new ArrayList<>();
+        for (int i= 0; i>products.size(); i++){
+            recommendationDtos.add(new ShowRecommendationDto(products.get(i)));
+        }
+        return recommendationDtos;
+    }
+
     public ShowRecommendationDto(Product product) {
         this.idProduct = product.getId();
         this.average = product.getAverage();

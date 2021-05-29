@@ -22,6 +22,8 @@ import java.util.Optional;
 public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository productRepository;
+    private final CategoryService categoryService;
+    private final ShowRecommendationDto recommendationDto;
 
     public void updateProductInfo(KafkaProducInfoDto producInfoDto) {
         Product product = new Product(producInfoDto);
@@ -36,6 +38,16 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public ResponseEntity<List<ShowRecommendationDto>> findRecommendation(Long idCategory) {
-        return null;
+         Optional<Category> category = categoryService.getById(idCategory);
+        if (!category.isPresent()){
+            return new ResponseEntity(new MaessageDto("La categoría seleccionada no existe"), HttpStatus.BAD_REQUEST);
+        }
+        List<Product> products =
+            productRepository.findAllByCategoriesAndStateTrueOrderByAverage(category.get());
+        if (products.size()==0){
+            return new ResponseEntity(
+                new MaessageDto("No hay ningún producto para esa categoría, crea uno!!"), HttpStatus.OK);
+        }
+        return new ResponseEntity(recommendationDto.listProductToListDto(products), HttpStatus.OK);
     }
 }
