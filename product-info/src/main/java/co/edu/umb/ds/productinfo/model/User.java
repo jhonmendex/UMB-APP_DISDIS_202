@@ -1,14 +1,26 @@
 package co.edu.umb.ds.productinfo.model;
 
 public class User {
+    private Long id;
     private String name;
-    private String dept;
-    private Long salary;
+    private String description;
+    private Integer price;
+    private String categories ;
 
-    public User(String name, String dept, Long salary) {
+    public User(Long id, String name, String description, Integer price, String categories) {
+        this.id = id;
         this.name = name;
-        this.dept = dept;
-        this.salary = salary;
+        this.description = description;
+        this.price = price;
+        this.categories = categories;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -19,19 +31,27 @@ public class User {
         this.name = name;
     }
 
-    public String getDept() {
-        return dept;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDept(String dept) {
-        this.dept = dept;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public Long getSalary() {
-        return salary;
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setSalary(Long salary) {
-        this.salary = salary;
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public String getCategories() {
+        return categories;
+    }
+
+    public void setCategories(String categories) {
+        this.categories = categories;
     }
 }
