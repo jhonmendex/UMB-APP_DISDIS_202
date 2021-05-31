@@ -4,32 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f578c6e-e2a4-423e-bc47-5e097d51d29b" name="Default Changelist" comment="">
+    <list default="true" id="b72d3e66-5296-4ecb-9282-770b7f69122a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/kafka/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/kafka/config/KafkaConfiguration.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/inventory/inventory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-history/order-history.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/product-info.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/kafka/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/kafka/config/KafkaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-info/src/main/java/co/edu/umb/ds/productinfo/business/service/KafkaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommendation/recommendation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review/review.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipping/shipping.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart/shopping-cart.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/umbappdisdis202.iml" beforeDir="false" />
+>>>>>>> a63766e440d4c49f686d0e5f408414c74574f236
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="TypeScript File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
   </component>
@@ -37,101 +43,33 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="1sxRHqjdwlUjgMedlQDC2Xpp0gy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> a63766e440d4c49f686d0e5f408414c74574f236
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$USER_HOME$/spring-boot-kafka-producer-example" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> a63766e440d4c49f686d0e5f408414c74574f236
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="F:\Programs\IntelliJ IDEA 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="co.edu.umb.ds.productinfo.business.service" />
-      <recent name="co.edu.umb.ds.productinfo.model.dto" />
-      <recent name="co.edu.umb.ds.productinfo.model.util" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\University\semester seventh\Distributed systems\3 term\basicProduct\UMB-APP_DISDIS_202\docker" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean" />
-      <command value="mvn compile" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.ProductInfoApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="inventory" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.inventory.InventoryApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderHistoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="order-history" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.orderhistory.OrderHistoryApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="ProductInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="product-info" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.productinfo.ProductInfoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecomendationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="recommendation" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.recomendation.RecomendationApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="review" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.review.ReviewApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShippingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="shipping" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.shipping.ShippingApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="shopping-cart" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.umb.ds.shoppingcart.ShoppingCartApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,10 +78,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1f578c6e-e2a4-423e-bc47-5e097d51d29b" name="Default Changelist" comment="" />
-      <created>1621043995540</created>
+      <changelist id="b72d3e66-5296-4ecb-9282-770b7f69122a" name="Default Changelist" comment="" />
+      <created>1621812172940</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1621043995540</updated>
       <workItem from="1621043999084" duration="537000" />
       <workItem from="1621199019141" duration="3362000" />
@@ -161,22 +100,14 @@
       <workItem from="1622247989376" duration="586000" />
       <workItem from="1622331615184" duration="1009000" />
       <workItem from="1622417796367" duration="2704000" />
+=======
+      <updated>1621812172940</updated>
+      <workItem from="1621812182472" duration="1121000" />
+>>>>>>> a63766e440d4c49f686d0e5f408414c74574f236
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

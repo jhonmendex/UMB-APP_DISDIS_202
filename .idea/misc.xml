@@ -6,6 +6,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/inventory/pom.xml" />
+        <option value="$PROJECT_DIR$/order-history/pom.xml" />
+        <option value="$PROJECT_DIR$/product-info/pom.xml" />
+        <option value="$PROJECT_DIR$/recommendation/pom.xml" />
+        <option value="$PROJECT_DIR$/review/pom.xml" />
+        <option value="$PROJECT_DIR$/shipping/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-cart/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
