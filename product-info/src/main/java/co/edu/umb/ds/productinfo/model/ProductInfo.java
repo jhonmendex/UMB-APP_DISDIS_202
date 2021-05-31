@@ -1,13 +1,13 @@
 package co.edu.umb.ds.productinfo.model;
 
-public class User {
-    private Long id;
+public class ProductInfo {
+    private long id;
     private String name;
     private String description;
-    private Integer price;
+    private int price;
     private String categories ;
 
-    public User(Long id, String name, String description, Integer price, String categories) {
+    public ProductInfo(long id, String name, String description, int price, String categories) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -15,11 +15,14 @@ public class User {
         this.categories = categories;
     }
 
-    public Long getId() {
+    public ProductInfo(String name, String technology, long l) {
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -39,11 +42,11 @@ public class User {
         this.description = description;
     }
 
-    public Integer getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

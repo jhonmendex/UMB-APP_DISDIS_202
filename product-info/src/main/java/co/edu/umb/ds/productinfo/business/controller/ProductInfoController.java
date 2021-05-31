@@ -1,25 +1,26 @@
 package co.edu.umb.ds.productinfo.business.controller;
 
-import co.edu.umb.ds.productinfo.business.service.ProductInfoServiceImpl;
-import co.edu.umb.ds.productinfo.model.dto.NewProductDto;
-import co.edu.umb.ds.productinfo.model.entities.ProductInformation;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import co.edu.umb.ds.productinfo.model.ProductInfo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin
-@RequestMapping("/api/v1/product")
+@RequestMapping("kafka")
 public class ProductInfoController {
+    @Autowired
+    private KafkaTemplate<String, ProductInfo> kafkaTemplate;
 
-    private  ProductInfoServiceImpl productInfoService;
+    private static final String TOPIC = "product-info-event";
 
-    public ProductInfoController() {
-        this.productInfoService = new ProductInfoServiceImpl();
+    @GetMapping("/publish/{name}")
+    public String post(@PathVariable("name") final String name) {
+
+        kafkaTemplate.send(TOPIC, new ProductInfo(name, "Technology", 12000L));
+
+        return "Published successfully";
     }
-
-    @PostMapping("/register")
-    public ResponseEntity<ProductInformation> createProduct (@ModelAttribute NewProductDto newProductDto){
-        return productInfoService.newProduct(newProductDto);
-    }
-    // toDo update
 }
