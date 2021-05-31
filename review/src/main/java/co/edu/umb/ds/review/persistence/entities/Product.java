@@ -1,6 +1,5 @@
 package co.edu.umb.ds.review.persistence.entities;
 
-import co.edu.umb.ds.review.persistence.entities.Review;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

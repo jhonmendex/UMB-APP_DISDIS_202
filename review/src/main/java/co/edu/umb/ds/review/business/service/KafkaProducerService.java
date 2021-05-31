@@ -3,8 +3,9 @@ package co.edu.umb.ds.review.business.service;
 import co.edu.umb.ds.review.persistence.constants.EKafka;
 import co.edu.umb.ds.review.persistence.dto.ReviewDto;
 import co.edu.umb.ds.review.persistence.dto.ReviewsByProductDto;
+import co.edu.umb.ds.review.persistence.entities.Product;
 import co.edu.umb.ds.review.persistence.entities.Review;
-import co.edu.umb.ds.review.persistence.repositories.ReviewRepository;
+import co.edu.umb.ds.review.persistence.repositories.ProductRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -13,6 +14,7 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -20,36 +22,27 @@ public class KafkaProducerService {
 
   private KafkaTemplate<String, ReviewsByProductDto> kafkaReviews;
 
-  private ReviewRepository reviewRepo;
+  private ProductRepository productRepo;
 
   public KafkaProducerService(
     KafkaTemplate<String, ReviewsByProductDto> kafkaReviews,
-    ReviewRepository reviewRepo) {
+    ProductRepository productRepo) {
     this.kafkaReviews = kafkaReviews;
-    this.reviewRepo = reviewRepo;
+    this.productRepo = productRepo;
   }
 
-  public void sendUpdateReviews(Long productId) {
-    List<Review> reviews = reviewRepo.getReviewsByProductId(productId);
+  public void sendUpdateReviews(Long productId) throws Exception {
+    Optional<Product> product = productRepo.findById(productId);
+    if (!product.isPresent()) {
+      throw new Exception("Producto no encontrado");
+    }
+    List<Review> reviews = product.get().getReviews();
     float average = 0;
     List<ReviewDto> reviewsDto = new ArrayList<>();
     if (!reviews.isEmpty()) {
-      int scoreSum = 0;
-      for (Review review: reviews) {
-        scoreSum += review.getScore();
-        reviewsDto.add(
-          ReviewDto.builder()
-            .id(review.getId())
-            .username(review.getUserName())
-            .createdAt(review.getCreatedAt())
-            .modificatedAt(review.getModificatedAt())
-            .comment(review.getComment())
-            .score(review.getScore())
-            .build()
-        );
-      }
+      reviewsDto.addAll(ReviewDto.ReviewToReviewDto(reviews));
+      int scoreSum = reviewsDto.stream().mapToInt(ReviewDto::getScore).sum();
       average = (float) scoreSum/reviews.size();
-
       average = (float) (Math.round(average * 100.0) / 100.0);
     }
     var message = ReviewsByProductDto.builder()
@@ -58,7 +51,8 @@ public class KafkaProducerService {
       .average(average)
       .build();
 
-    var future = kafkaReviews.send(EKafka.REVIEW_TOPIC.getMessage(), message);
+    var future =
+      kafkaReviews.send(EKafka.REVIEW_TOPIC.getMessage(), message);
     future.addCallback(new ListenableFutureCallback<>() {
       @Override
       public void onFailure(Throwable throwable) {
