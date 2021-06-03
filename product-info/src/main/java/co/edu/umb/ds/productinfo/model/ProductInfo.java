@@ -15,7 +15,7 @@ public class ProductInfo {
         this.categories = categories;
     }
 
-    public ProductInfo(String name, String technology, long l) {
+    public ProductInfo() {
     }
 
     public long getId() {
@@ -56,5 +56,16 @@ public class ProductInfo {
 
     public void setCategories(String categories) {
         this.categories = categories;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", categories='" + categories + '\'' +
+                '}';
     }
 }
