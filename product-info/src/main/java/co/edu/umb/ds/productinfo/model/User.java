@@ -34,4 +34,22 @@ public class User {
     public void setSalary(Long salary) {
         this.salary = salary;
     }
+
+    public User() {
+    }
+
+    public User(String name, String dept) {
+
+        this.name = name;
+        this.dept = dept;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("User{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", dept='").append(dept).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
