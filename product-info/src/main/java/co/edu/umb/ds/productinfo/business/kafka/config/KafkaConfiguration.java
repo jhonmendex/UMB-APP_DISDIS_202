@@ -1,7 +1,11 @@
 package co.edu.umb.ds.productinfo.business.kafka.config;
 
+<<<<<<< HEAD
 import co.edu.umb.ds.productinfo.model.User;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
+=======
+import co.edu.umb.ds.productinfo.model.ProductInfo;
+>>>>>>> 7c951add2ff5b20f827a735e1a64d65d618f923f
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -20,7 +24,11 @@ import java.util.Map;
 @Configuration
 public class KafkaConfiguration {
     @Bean
+<<<<<<< HEAD
     public ProducerFactory<String, User> producerFactory() {
+=======
+    public ProducerFactory<String, ProductInfo> producerFactory() {
+>>>>>>> 7c951add2ff5b20f827a735e1a64d65d618f923f
         Map<String, Object> config = new HashMap<>();
 
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
@@ -32,6 +40,7 @@ public class KafkaConfiguration {
 
 
     @Bean
+<<<<<<< HEAD
     public KafkaTemplate<String, User> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
@@ -75,4 +84,9 @@ public class KafkaConfiguration {
         factory.setConsumerFactory(userConsumerFactory());
         return factory;
     }
+=======
+    public KafkaTemplate<String, ProductInfo> kafkaTemplate() {
+        return new KafkaTemplate<>(producerFactory());
+    }
+>>>>>>> 7c951add2ff5b20f827a735e1a64d65d618f923f
 }
