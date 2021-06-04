@@ -21,14 +21,28 @@ public class ReviewController {
   }
 
   @GetMapping("/{productId}")
-  public ResponseEntity<List<Review>> getReviewsByProduct(@PathVariable("productId") Long productId) {
+  public ResponseEntity<List<ReviewDto>> getReviewsByProduct(@PathVariable("productId") Long productId) {
     return new ResponseEntity(reviewService.getReviewsByProduct(productId), HttpStatus.OK);
   }
 
   @PostMapping("/{productId}")
-  public ResponseEntity createReview(@Valid @RequestBody ReviewDto reviewDto, @PathVariable Long productId) {
+  public ResponseEntity createReview(@Valid @RequestBody ReviewDto reviewDto,
+                                     @PathVariable Long productId) throws Exception {
     reviewService.saveNewReview(reviewDto, productId);
     return new ResponseEntity(HttpStatus.CREATED);
+  }
+
+  @PutMapping("/{reviewId}")
+  public ResponseEntity updateReview(@Valid @RequestBody ReviewDto reviewDto,
+                                     @PathVariable Long reviewId) throws Exception {
+    reviewService.updateReview(reviewDto, reviewId);
+    return new ResponseEntity(HttpStatus.NO_CONTENT);
+  }
+
+  @DeleteMapping("/{reviewId}")
+  public ResponseEntity deleteReview(@PathVariable Long reviewId) throws Exception {
+    reviewService.deleteReview(reviewId);
+    return new ResponseEntity(HttpStatus.NO_CONTENT);
   }
 
 }

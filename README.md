@@ -72,7 +72,7 @@ Emitir un evento (review-by-product-event) con la información actualizada de la
 
 ### Productor
 
-#### review-by-product-event (nombre del topic)
+#### - review-by-product-event
 
 #### Ejemplo de una lista de reviews por producto
 
@@ -92,3 +92,73 @@ Emitir un evento (review-by-product-event) con la información actualizada de la
   ]
 }
 ```
+
+### Consumidor
+
+#### Consume de los siguientes topics:
+- product-info-event
+
+## API REST
+
+### Reviews por Producto:
+
+* **URL**  
+  `/api/v1/review/:productId`
+* **Method**  
+  `GET`
+* **URL Params**  
+  **Required:**  
+  `productID=[Long]`
+* **Success Response**
+  * **Code** 200  
+
+### Crear Review:
+
+* **URL**  
+  `/api/v1/review/:productId`
+* **Method**  
+  `POST`
+* **URL Params**  
+  **Required:**  
+  `productID=[Long]`
+* **Request Body*  
+  ```
+  {
+    "username": [String],
+    "comment": [String],
+    "score": [Integer]
+  }
+  ```
+* **Success Response**
+  * **Code** 201  
+
+### Modificar Review:
+
+* **URL**  
+  `/api/v1/review/:reviewId`
+* **Method**  
+  `PUT`
+* **URL Params**  
+  **Required:**  
+  `reviewId=[Long]`
+* **Request Body*
+  ```
+  {
+    "comment": [String],
+    "score": [Integer]
+  }
+  ```
+* **Success Response**
+  * **Code** 204  
+
+### Eliminar una Review:
+
+* **URL**  
+  `/api/v1/review/:reviewId`
+* **Method**  
+  `DELETE`
+* **URL Params**  
+  **Required:**  
+  `reviewId=[Long]`
+* **Success Response**
+  * **Code** 204  

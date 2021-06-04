@@ -20,7 +20,7 @@ import java.util.Map;
 public class KafkaProducerConfig {
 
   @Bean
-  public ProducerFactory<String, ReviewsByProductDto> producerFactory(){
+  public ProducerFactory<String, ReviewsByProductDto> reviewsProducerFactory(){
     Map<String, Object> config = new HashMap<>();
 
     config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, EKafka.BOOTSTRAP_SERVER_KAFKA.getMessage());
@@ -32,6 +32,6 @@ public class KafkaProducerConfig {
 
   @Bean
   public KafkaTemplate<String, ReviewsByProductDto> kafkaTemplate(){
-    return new KafkaTemplate<String, ReviewsByProductDto>(producerFactory());
+    return new KafkaTemplate<String, ReviewsByProductDto>(reviewsProducerFactory());
   }
 }

@@ -66,9 +66,7 @@ public class Review {
     )
     private Integer score;
 
-    @Column(
-            name = "product_id",
-            nullable = false
-    )
-    private Long productId;
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 }

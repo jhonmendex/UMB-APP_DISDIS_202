@@ -8,10 +8,4 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface ReviewRepository extends JpaRepository<Review, Long> {
-
-    @Query(
-            nativeQuery = true,
-            value = "SELECT * FROM review WHERE product_id = :productId"
-    )
-    List<Review> getReviewsByProductId(@Param("productId") Long productId);
 }
