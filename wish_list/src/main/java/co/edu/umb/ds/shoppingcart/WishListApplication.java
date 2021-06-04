@@ -1,14 +1,13 @@
-package co.edu.umb.ds.shoppingcart;
+package co.edu.umb.ds.wish_list;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/*@SpringBootApplication
-public class ShoppingCartApplication {
+@SpringBootApplication
+public class WishListApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(ShoppingCartApplication.class, args);
+    SpringApplication.run(WishListApplication.class, args);
   }
 
 }
-*/
