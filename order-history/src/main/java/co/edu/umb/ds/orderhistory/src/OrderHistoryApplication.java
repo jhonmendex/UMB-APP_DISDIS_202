@@ -1,4 +1,4 @@
-package co.edu.umb.ds.orderhistory;
+package co.edu.umb.ds.orderhistory.src;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
