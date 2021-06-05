@@ -25,7 +25,7 @@ public class ShowRecommendationDto {
 
     public List<ShowRecommendationDto> listProductToListDto(List<Product> products) {
         List<ShowRecommendationDto> recommendationDtos = new ArrayList<>();
-        for (int i= 0; i>products.size(); i++){
+        for (int i= 0; i<products.size(); i++){
             recommendationDtos.add(new ShowRecommendationDto(products.get(i)));
         }
         return recommendationDtos;

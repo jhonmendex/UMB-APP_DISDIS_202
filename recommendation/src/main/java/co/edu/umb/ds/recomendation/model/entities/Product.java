@@ -48,15 +48,10 @@ public class Product {
     public Product(KafkaProducInfoDto producInfoDto) {
         this.id = producInfoDto.getId();
         this.name = producInfoDto.getName();
-        this.pathImage = producInfoDto.getPathImage();
+        this.pathImage = producInfoDto.getPath_image();
         this.price = producInfoDto.getPrice();
         this.state = producInfoDto.isState();
         this.categories = producInfoDto.getCategories();
-    }
-
-    public Product(KafkaReviewDto reviewDto) {
-        this.id = reviewDto.getProductId();
-        this.average = reviewDto.getAverage();
     }
 
 }
