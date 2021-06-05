@@ -14,7 +14,7 @@ public class KafkaProducInfoDto {
 
     private Long id;
     private String name;
-    private String pathImage;
+    private String path_image;
     private int price;
     private boolean state;
     private Set<Category> categories;

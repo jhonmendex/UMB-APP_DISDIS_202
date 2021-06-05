@@ -8,18 +8,17 @@ services:
       - 9092:9092
     links:
       - zookeeper
+    container_name: kafka
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ADVERTISED_HOST_NAME: kafka
       KAFKA_ADVERTISED_PORT: 9092
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_CREATE_TOPICS: "review-by-product-event:1:1,product-info-event:1:1"
-  mysql:
+  dbrecommendation:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    container_name: mysql
+    container_name: dbrecommendation
     restart: unless-stopped
-    ports:
-      - 6666:3306
     environment:
       MYSQL_DATABASE: recommendation
       MYSQL_USER: dbuser
@@ -27,3 +26,26 @@ services:
       MYSQL_ROOT_PASSWORD: dbpass
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+  recommendations:
+    image: truebu/recommendation-spring:1.0
+    ports:
+      - 8082:8080
+    depends_on:
+      - dbrecommendation
+      - kafka
+  dbreview:
+    image: mysql:8.0
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: review
+      MYSQL_USER: reviewuser
+      MYSQL_PASSWORD: reviewpass
+      MYSQL_ROOT_PASSWORD: reviewpass
+  reviews:
+    image: alvarocar/reviews-spring:1.0.0
+    ports:
+      - 8081:8080
+    depends_on:
+      - dbreview
+      - kafka

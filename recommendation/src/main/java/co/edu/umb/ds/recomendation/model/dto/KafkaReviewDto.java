@@ -11,4 +11,5 @@ public class KafkaReviewDto {
 
     private Long productId;
     private float average;
+
 }

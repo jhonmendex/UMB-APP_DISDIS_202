@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/api/v1/recommendation")
 @RestController
 @CrossOrigin
 @AllArgsConstructor
+@RequestMapping("/api/v1/recommendation")
 public class RecommendationController {
 
     private final ProductServiceImpl productService;
